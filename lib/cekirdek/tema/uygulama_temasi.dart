@@ -39,7 +39,7 @@ class UygulamaTemasi {
           textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: UygulamaRenkleri.yuzey,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
@@ -85,7 +85,7 @@ class UygulamaTemasi {
           textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
