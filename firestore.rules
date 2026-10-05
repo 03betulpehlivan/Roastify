@@ -1,0 +1,93 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+
+    function hasOnlyAllowedKeys() {
+      return request.resource.data.keys().hasOnly([
+        'id',
+        'tip',
+        'savas',
+        'tekliRoast',
+        'fotograf1Url',
+        'fotograf2Url',
+        'thumbnail1Url',
+        'thumbnail2Url',
+        'paylasanId',
+        'paylasanAdi',
+        'tepkiler',
+        'tarih'
+      ]);
+    }
+
+    function hasRequiredKeys() {
+      return request.resource.data.keys().hasAll([
+        'id',
+        'tip',
+        'paylasanId',
+        'paylasanAdi',
+        'tepkiler',
+        'tarih'
+      ]);
+    }
+
+    function hasValidReactionsMap() {
+      return request.resource.data.tepkiler is map
+        && request.resource.data.tepkiler.keys().hasOnly(['rip', 'boom', 'fire'])
+        && request.resource.data.tepkiler.rip is int
+        && request.resource.data.tepkiler.boom is int
+        && request.resource.data.tepkiler.fire is int
+        && request.resource.data.tepkiler.rip >= 0
+        && request.resource.data.tepkiler.boom >= 0
+        && request.resource.data.tepkiler.fire >= 0;
+    }
+
+    function hasValidReactionIncrement() {
+      return request.resource.data.tepkiler.rip >= resource.data.tepkiler.rip
+        && request.resource.data.tepkiler.boom >= resource.data.tepkiler.boom
+        && request.resource.data.tepkiler.fire >= resource.data.tepkiler.fire
+        // Tek istekte sadece tek tepkinin +1 artmasina izin ver.
+        && (
+          request.resource.data.tepkiler.rip == resource.data.tepkiler.rip + 1
+          && request.resource.data.tepkiler.boom == resource.data.tepkiler.boom
+          && request.resource.data.tepkiler.fire == resource.data.tepkiler.fire
+          ||
+          request.resource.data.tepkiler.rip == resource.data.tepkiler.rip
+          && request.resource.data.tepkiler.boom == resource.data.tepkiler.boom + 1
+          && request.resource.data.tepkiler.fire == resource.data.tepkiler.fire
+          ||
+          request.resource.data.tepkiler.rip == resource.data.tepkiler.rip
+          && request.resource.data.tepkiler.boom == resource.data.tepkiler.boom
+          && request.resource.data.tepkiler.fire == resource.data.tepkiler.fire + 1
+        );
+    }
+
+    match /vitrin/{shareId} {
+      allow read: if true;
+
+      allow create: if isAuthenticated()
+        && isOwner(request.resource.data.paylasanId)
+        && request.resource.data.id == shareId
+        && hasOnlyAllowedKeys()
+        && hasRequiredKeys()
+        && hasValidReactionsMap();
+
+      allow update: if isAuthenticated()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['tepkiler'])
+        && hasValidReactionsMap()
+        && hasValidReactionIncrement();
+
+      allow delete: if isAuthenticated() && isOwner(resource.data.paylasanId);
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "filmswipee",
+          "appId": "1:507921047817:android:4200668e87b055edabb3d8",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "filmswipee",
+          "configurations": {
+            "android": "1:507921047817:android:4200668e87b055edabb3d8",
+            "ios": "1:507921047817:ios:328af7df839bc321abb3d8",
+            "macos": "1:507921047817:ios:328af7df839bc321abb3d8",
+            "web": "1:507921047817:web:1f5567f27adb8ce8abb3d8",
+            "windows": "1:507921047817:web:f6a2a424866759e1abb3d8"
+          }
+        }
+      }
+    }
+  },
+  "functions": {
+    "source": "functions"
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

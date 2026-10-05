@@ -1,0 +1,153 @@
+{
+  "uygulamaAdi": "AI Roast Battle",
+  "battleSonucu": "BATTLE SONUCU",
+  "hakem": "HAKEM",
+  "kazanan": "KAZANAN",
+  "yarismaci": "YARIŞMACI",
+  "savasiPaylas": "SAVAŞI PAYLAŞ",
+  "hazirlaniyor": "HAZIRLANIYOR",
+  "tekrarSavas": "TEKRAR SAVAŞ",
+  "paylasilamadi": "Paylaşılamadı.",
+  "paylasMesaj": "🔥 Arkadaşımla fena kapıştık! Kim kazandı dersin? #RoastBattle #KapakAI",
+  "anaSayfaBaslik": "AI ROAST BATTLE",
+  "fotoSec": "FOTOĞRAF SEÇ",
+  "savasBaslat": "SAVAŞI BAŞLAT",
+  "analizEdiliyor": "ANALİZ EDİLİYOR...",
+  "karakterSec": "BİR JUDGE SEÇ",
+  "onboardingHosGeldinizBaslik": "HOS GELDINIZ",
+  "onboardingHosGeldinizAciklama": "Arkadaslarinizin fotograflarini yukleyin ve yapay zekanin onlari yerin dibine sokmesini izleyin!",
+  "onboardingJudgeSecinBaslik": "JUDGE SECIN",
+  "onboardingJudgeSecinAciklama": "Birbirinden farkli karakterlerle savasin hakemini belirleyin. Her karakterin tarzi farklidir!",
+  "onboardingZafereUlasinBaslik": "ZAFERE ULASIN",
+  "onboardingZafereUlasinAciklama": "Savasin galibi kim olacak? Sonuclari paylasin ve eglenceyi katlayin!",
+  "onboardingSonraki": "SONRAKI",
+  "onboardingAtla": "ATLA",
+  "onboardingBaslayalim": "BASLAYALIM",
+  "vitrinBaslik": "ONUR TABLOSU",
+  "vitrinBosDurum": "Henüz paylaşılan savaş yok.\nİlk sen paylaş!",
+  "vitrinTekrarDene": "TEKRAR DENE",
+  "vitrinAkisiYenile": "Akısı yenile",
+  "anaOzelKarakterBaslik": "KENDİ KARAKTERİN",
+  "anaOzelKarakterAciklama": "AI'nın seni hangi tarzda gömmesini istersin? (Örn: 'Huysuz bir tarih profesörü', 'Aşırı kibar bir uşak')",
+  "anaOzelKarakterHint": "Karakterini tarif et...",
+  "anaOzelKarakterBosHata": "Lütfen bir tarif gir",
+  "iptal": "İPTAL",
+  "tamam": "TAMAM",
+  "anaBaglamPozitifVibe": "POZİTİF VİBE",
+  "anaBaglamRoastGuclendir": "ROAST'U GÜÇLENDİR",
+  "anaBaglamKapakla": "KAPAKLA",
+  "anaBaglamYucelt": "YÜCELT",
+  "anaBaglamPozitifAciklama": "Nasıl bir bağınız var? Ona göre daha içten bir şeyler söylesin.",
+  "anaBaglamRoastAciklama": "AI'nın ona özel kapak yapması için biraz dedikodu ver (İsteğe bağlı).",
+  "anaBaglamKisiHint": "Bu kişi sana neyin? (Örn: arkadaş, patron)",
+  "anaBaglamPozitifOzellikHint": "En sevdiğin özelliği ne?",
+  "anaBaglamNegatifOzellikHint": "En sinir olduğun özelliği ne?",
+  "anaBaglamPozitifSirHint": "Neden motivasyona ihtiyacı var?",
+  "anaBaglamNegatifSirHint": "Bir sırrı var mı? (opsiyonel)",
+  "anaBaglamBosver": "BOŞVER",
+  "anaYeniKapakHazirlaniyor": "Yeni kapak hazırlanıyor...",
+  "anaStiliniSec": "STİLİNİ SEÇ",
+  "anaTekliKapakBaslik": "TEKLİ KAPAK",
+  "anaTekliKapakAltBaslik": "Kendini AI'ya teslim et",
+  "anaBattleModuBaslik": "KAPIŞMA MODU",
+  "anaBattleModuAltBaslik": "Arkadaşınla kapış",
+  "anaKalanHak": "KALAN HAK",
+  "anaYenilenme": "YENILENME",
+  "anaRoastEtiketi": "ROAST",
+  "anaSimulasyonModu": "SİMÜLASYON MODU",
+  "anaSimulasyonAciklama": "Kredi harcamadan test et",
+  "sonucVitrineGonderBaslik": "Vitrine Gönder",
+  "sonucVitrineGonderAciklamaTekli": "Hala haşlanmak isteyen var mı? Tüm dünya görsün mü?",
+  "sonucVitrineGonderAciklamaSavas": "Savaşın tüm dünya tarafından görülsün mü?",
+  "sonucAnonimPaylas": "Anonim Paylaş",
+  "sonucIsim": "İsminiz",
+  "sonucIsimOrnek": "Roaster 123",
+  "sonucPaylas": "PAYLAŞ",
+  "sonucAnonimRoaster": "Anonim Roaster",
+  "sonucIsimsiz": "İsimsiz",
+  "sonucPaylasHata": "Paylaşım oluşturulurken bir hata oluştu: {error}",
+  "sonucPaylasHataKisa": "Paylasilamadi: {error}",
+  "@sonucPaylasHata": {
+    "placeholders": {
+      "error": {
+        "type": "Object"
+      }
+    }
+  },
+  "@sonucPaylasHataKisa": {
+    "placeholders": {
+      "error": {
+        "type": "Object"
+      }
+    }
+  },
+  "sonucVitrineEklendi": "Vitrine başarıyla eklendi! 🔥",
+  "sonucTekrar": "TEKRAR",
+  "sonucPaylasButon": "PAYLAS",
+  "sonucVitrineGonderGlobal": "VİTRİNE GÖNDER (GLOBAL)",
+  "sonucFarkliKarakterSec": "FARKLI KARAKTER SEC",
+  "sonucAyniFotoFarkliKarakter": "AYNI FOTO + FARKLI KARAKTER",
+  "savasSonucPaylasButon": "SONUCU PAYLAS",
+  "savasSonucYeniSavas": "YENI SAVAS BASLAT",
+  "gecmisBaslik": "GECMIS",
+  "gecmisTemizleBaslik": "Gecmisi Temizle",
+  "gecmisTemizleAciklama": "Tum roast gecmisi silinecek. Emin misin?",
+  "gecmisTemizleOnay": "TEMIZLE",
+  "gecmisTemizlendi": "Gecmis temizlendi",
+  "gecmisBosBaslik": "Henuz roast gecmisin yok",
+  "gecmisBosAciklama": "Ilk roast ini yaptiktan sonra burada gorunecek!",
+  "gecmisHemenBasla": "HEMEN BASLA",
+  "gecmisKopyala": "KOPYALA",
+  "gecmisPanoyaKopyalandi": "Panoya kopyalandi",
+  "gecmisAzOnce": "Az once",
+  "gecmisDakikaOnce": "{count} dk once",
+  "gecmisSaatOnce": "{count} saat once",
+  "gecmisGunOnce": "{count} gun once",
+  "@gecmisDakikaOnce": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@gecmisSaatOnce": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@gecmisGunOnce": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "savasHazirlikBaslik": "ROAST BATTLE",
+  "savasHazirlikIkiKurban": "IKI KURBAN SEC",
+  "savasHazirlikAltYazi": "Yapay zeka kimin daha ezik olduguna karar verecek.",
+  "savasHazirlikBaslat": "BATTLE BASLAT!",
+  "savasHazirlikHakemSec": "HAKEMI SEC",
+  "savasHazirlikHakemStili": "HAKEM STILI",
+  "savasHazirlikHakemAciklama": "Savasi kim yonetmeli? (Orn: 'Cok elit bir moda elestirmeni', 'Sokak jargonlu bir abi')",
+  "savasHazirlikHakemHint": "Hakemini tarif et...",
+  "savasHazirlikBaslatButon": "BASLAT",
+  "savasHazirlikKurbanEtiket": "{index}. KURBAN",
+  "@savasHazirlikKurbanEtiket": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "ayarlarBaslik": "AYARLAR",
+  "ayarlarDilSecimiBaslik": "DIL SECIMI / LANGUAGE SELECTION",
+  "ayarlarTurkce": "Turkce",
+  "ayarlarIngilizce": "English",
+  "ayarlarVeriSifirlaBaslik": "VERILERI SIFIRLA",
+  "ayarlarVeriSifirlaAciklama": "Tum gecmisin ve istatistiklerin kalici olarak silinecek. Emin misin?",
+  "ayarlarVazgec": "VAZGEC",
+  "ayarlarEvetSil": "EVET, SIL",
+  "ayarlarVerilerTemizlendi": "Tum veriler temizlendi. Uygulama sifirlandi."
+}

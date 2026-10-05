@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "AI Roast Battle",
+      "request": "launch",
+      "type": "dart",
+      "toolArgs": [
+        "--dart-define=ROAST_PROXY_BASE_URL=https://europe-west1-filmswipee.cloudfunctions.net"
+      ]
+    },
+    {
+      "name": "AI Roast Battle (profile)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "toolArgs": [
+        "--dart-define=ROAST_PROXY_BASE_URL=https://europe-west1-filmswipee.cloudfunctions.net"
+      ]
+    }
+  ]
+}

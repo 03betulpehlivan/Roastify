@@ -1,0 +1,58 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Functions install
+        working-directory: functions
+        run: npm ci
+
+      - name: Functions lint
+        working-directory: functions
+        run: npm run lint
+
+      - name: Functions test
+        working-directory: functions
+        run: npm test
+
+      - name: Setup Java (for Firebase emulators)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Functions security rules test
+        working-directory: functions
+        run: npm run test:rules
+
+      - name: Functions dependency audit
+        working-directory: functions
+        run: npm audit --omit=dev --audit-level=high
+
+      - name: Flutter pub get
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze --no-fatal-infos
+
+      - name: Test
+        run: flutter test
+
+      - name: Android debug build
+        run: flutter build apk --debug --dart-define=ROAST_PROXY_BASE_URL=https://example.com

@@ -1,0 +1,153 @@
+{
+  "uygulamaAdi": "AI Roast Battle",
+  "battleSonucu": "BATTLE RESULT",
+  "hakem": "JUDGE",
+  "kazanan": "WINNER",
+  "yarismaci": "PLAYER",
+  "savasiPaylas": "SHARE BATTLE",
+  "hazirlaniyor": "PREPARING",
+  "tekrarSavas": "REBATTLE",
+  "paylasilamadi": "Could not share.",
+  "paylasMesaj": "🔥 We had a brutal battle! Who do you think won? #RoastBattle #KapakAI",
+  "anaSayfaBaslik": "AI ROAST BATTLE",
+  "fotoSec": "SELECT PHOTO",
+  "savasBaslat": "START BATTLE",
+  "analizEdiliyor": "ANALYZING...",
+  "karakterSec": "CHOOSE A JUDGE",
+  "onboardingHosGeldinizBaslik": "WELCOME",
+  "onboardingHosGeldinizAciklama": "Upload your friends' photos and watch AI roast them mercilessly!",
+  "onboardingJudgeSecinBaslik": "CHOOSE A JUDGE",
+  "onboardingJudgeSecinAciklama": "Pick a unique character as the battle judge. Every character has a different style!",
+  "onboardingZafereUlasinBaslik": "REACH VICTORY",
+  "onboardingZafereUlasinAciklama": "Who will win the battle? Share the results and double the fun!",
+  "onboardingSonraki": "NEXT",
+  "onboardingAtla": "SKIP",
+  "onboardingBaslayalim": "LET'S START",
+  "vitrinBaslik": "SHOWCASE",
+  "vitrinBosDurum": "No battles have been shared yet.\nBe the first to share!",
+  "vitrinTekrarDene": "TRY AGAIN",
+  "vitrinAkisiYenile": "Refresh feed",
+  "anaOzelKarakterBaslik": "YOUR OWN CHARACTER",
+  "anaOzelKarakterAciklama": "How should AI roast you? (e.g. 'A grumpy history professor', 'An overly polite butler')",
+  "anaOzelKarakterHint": "Describe your character...",
+  "anaOzelKarakterBosHata": "Please enter a description",
+  "iptal": "CANCEL",
+  "tamam": "OK",
+  "anaBaglamPozitifVibe": "POSITIVE VIBE",
+  "anaBaglamRoastGuclendir": "POWER UP THE ROAST",
+  "anaBaglamKapakla": "ROAST",
+  "anaBaglamYucelt": "UPLIFT",
+  "anaBaglamPozitifAciklama": "What is your relationship? It can respond more sincerely.",
+  "anaBaglamRoastAciklama": "Give AI some details to make the roast more personal (optional).",
+  "anaBaglamKisiHint": "Who is this person to you? (e.g. friend, boss)",
+  "anaBaglamPozitifOzellikHint": "What is your favorite trait?",
+  "anaBaglamNegatifOzellikHint": "What annoys you the most?",
+  "anaBaglamPozitifSirHint": "Why do they need motivation?",
+  "anaBaglamNegatifSirHint": "Any secret? (optional)",
+  "anaBaglamBosver": "SKIP",
+  "anaYeniKapakHazirlaniyor": "Preparing a new roast...",
+  "anaStiliniSec": "CHOOSE YOUR STYLE",
+  "anaTekliKapakBaslik": "SINGLE ROAST",
+  "anaTekliKapakAltBaslik": "Surrender yourself to AI",
+  "anaBattleModuBaslik": "BATTLE MODE",
+  "anaBattleModuAltBaslik": "Battle with a friend",
+  "anaKalanHak": "REMAINING",
+  "anaYenilenme": "REFRESH",
+  "anaRoastEtiketi": "ROAST",
+  "anaSimulasyonModu": "SIMULATION MODE",
+  "anaSimulasyonAciklama": "Test without spending credits",
+  "sonucVitrineGonderBaslik": "Send to Showcase",
+  "sonucVitrineGonderAciklamaTekli": "Want everyone to see this roast?",
+  "sonucVitrineGonderAciklamaSavas": "Do you want the whole world to see this battle?",
+  "sonucAnonimPaylas": "Share anonymously",
+  "sonucIsim": "Your name",
+  "sonucIsimOrnek": "Roaster 123",
+  "sonucPaylas": "SHARE",
+  "sonucAnonimRoaster": "Anonymous Roaster",
+  "sonucIsimsiz": "Nameless",
+  "sonucPaylasHata": "An error occurred while preparing share: {error}",
+  "sonucPaylasHataKisa": "Could not share: {error}",
+  "@sonucPaylasHata": {
+    "placeholders": {
+      "error": {
+        "type": "Object"
+      }
+    }
+  },
+  "@sonucPaylasHataKisa": {
+    "placeholders": {
+      "error": {
+        "type": "Object"
+      }
+    }
+  },
+  "sonucVitrineEklendi": "Added to showcase successfully! 🔥",
+  "sonucTekrar": "RETRY",
+  "sonucPaylasButon": "SHARE",
+  "sonucVitrineGonderGlobal": "SEND TO SHOWCASE (GLOBAL)",
+  "sonucFarkliKarakterSec": "CHOOSE DIFFERENT CHARACTER",
+  "sonucAyniFotoFarkliKarakter": "SAME PHOTO + DIFFERENT CHARACTER",
+  "savasSonucPaylasButon": "SHARE RESULT",
+  "savasSonucYeniSavas": "START NEW BATTLE",
+  "gecmisBaslik": "HISTORY",
+  "gecmisTemizleBaslik": "Clear history",
+  "gecmisTemizleAciklama": "All roast history will be deleted. Are you sure?",
+  "gecmisTemizleOnay": "CLEAR",
+  "gecmisTemizlendi": "History cleared",
+  "gecmisBosBaslik": "No roast history yet",
+  "gecmisBosAciklama": "It will appear here after your first roast!",
+  "gecmisHemenBasla": "START NOW",
+  "gecmisKopyala": "COPY",
+  "gecmisPanoyaKopyalandi": "Copied to clipboard",
+  "gecmisAzOnce": "Just now",
+  "gecmisDakikaOnce": "{count} min ago",
+  "gecmisSaatOnce": "{count} hr ago",
+  "gecmisGunOnce": "{count} day ago",
+  "@gecmisDakikaOnce": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@gecmisSaatOnce": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@gecmisGunOnce": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "savasHazirlikBaslik": "ROAST BATTLE",
+  "savasHazirlikIkiKurban": "CHOOSE TWO TARGETS",
+  "savasHazirlikAltYazi": "AI will decide who gets roasted harder.",
+  "savasHazirlikBaslat": "START BATTLE!",
+  "savasHazirlikHakemSec": "CHOOSE JUDGE",
+  "savasHazirlikHakemStili": "JUDGE STYLE",
+  "savasHazirlikHakemAciklama": "Who should run this battle? (e.g. 'An elite fashion critic', 'A street-style tough guy')",
+  "savasHazirlikHakemHint": "Describe your judge...",
+  "savasHazirlikBaslatButon": "START",
+  "savasHazirlikKurbanEtiket": "TARGET {index}",
+  "@savasHazirlikKurbanEtiket": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      }
+    }
+  },
+  "ayarlarBaslik": "SETTINGS",
+  "ayarlarDilSecimiBaslik": "LANGUAGE SELECTION",
+  "ayarlarTurkce": "Turkish",
+  "ayarlarIngilizce": "English",
+  "ayarlarVeriSifirlaBaslik": "RESET ALL DATA",
+  "ayarlarVeriSifirlaAciklama": "All your history and stats will be permanently deleted. Are you sure?",
+  "ayarlarVazgec": "CANCEL",
+  "ayarlarEvetSil": "YES, DELETE",
+  "ayarlarVerilerTemizlendi": "All data cleared. App reset."
+}
